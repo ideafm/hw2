@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Title</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto';
+            color: #333333;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #input {
+            height: 40px;
+            font-size: 24px;
+            flex: 1;
+        }
+        #total {
+            width: 200px;
+            text-align: right;
+            flex-shrink: 0;
+            margin-left: 30px;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .container {
+            width: 900px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 60px;
+        }
+        #list {
+            margin-top: 20px;
+            display: flex;
+            align-items: stretch;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        a {
+            color: #333;
+        }
+        .item {
+            width: calc(25% - 10px);
+            margin: 5px 0;
+            box-shadow:  0 0 10px rgba(0,0,0,.5);
+            padding: 8px;
+            border-radius: 4px;
+        }
+        .item__title {
+            font-size: 24px;
+        }
+        .item__owner {
+            font-size: 18px;
+            color: #999999;
+        }
+        .item__footer {
+            margin-top: 5px;
+        }
+        .item__footer div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .item__footer em {
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Search js repositories</h1>
+        <header>
+            <input id="input" type="text" value="" placeholder="Angular">
+            <div id="total"></div>
+        </header>
+        <div id="list"></div>
+    </div>
+</body>
+</html>
